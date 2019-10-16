@@ -1,6 +1,6 @@
 ---
 id: tutorial
-title: "Tutorial: Intro to React"
+title: "Pamoka: Įžanga į React"
 layout: tutorial
 sectionid: tutorial
 permalink: tutorial/tutorial.html
@@ -12,26 +12,26 @@ redirect_from:
   - "docs/tutorial-zh-CN.html"
 ---
 
-This tutorial doesn't assume any existing React knowledge.
+Ši pamoka nereikalauja jokiu esamu React žinių.
 
-## Before We Start the Tutorial {#before-we-start-the-tutorial}
+## Prieš Pradedant Pamoką {#before-we-start-the-tutorial}
 
-We will build a small game during this tutorial. **You might be tempted to skip it because you're not building games -- but give it a chance.** The techniques you'll learn in the tutorial are fundamental to building any React app, and mastering it will give you a deep understanding of React.
+Šioje pamokoje mes sukursime nedideli žaidimą. **Jei nekuriate žaidimų, galbūt norėtumete pralelisti šią pamoką, tačiau - duokite šansą**, nes metodai, kuriuos išmoksite šioje pamokoje yra React aplikacijų pamatai. Taipogi, jų įvaldymas suteiks jums gilesnį supratimą apie React.
 
->Tip
+>Patarimas
 >
->This tutorial is designed for people who prefer to **learn by doing**. If you prefer learning concepts from the ground up, check out our [step-by-step guide](/docs/hello-world.html). You might find this tutorial and the guide complementary to each other.
+>Ši pamoka yra sukurta tiems, kurie teikia pirmenybę  **mokymuisi atliekant užduotis**. Jei jūs teikiate pirmenybę mokymuisi nuo nulio, pažiūrėkite mūsų [žigsnis po žingsnio gidą](/docs/hello-world.html). Taip pat galite užtikti vietų, kur ši pamoka bei gidas papildo vienas kitą.
 
-The tutorial is divided into several sections:
+Ši pamoka yra padalyta į keletą skyrių:
 
-* [Setup for the Tutorial](#setup-for-the-tutorial) will give you **a starting point** to follow the tutorial.
-* [Overview](#overview) will teach you **the fundamentals** of React: components, props, and state.
-* [Completing the Game](#completing-the-game) will teach you **the most common techniques** in React development.
-* [Adding Time Travel](#adding-time-travel) will give you **a deeper insight** into the unique strengths of React.
+* [Pasiruošimas Pamokai](#setup-for-the-tutorial) suteiks jum **atspirties tašką** norint sekti pamoką.
+* [Apžvalga](#overview) išmokys jus React **pagrindų**: komponentų, savavališkų įvesčių ir padėties.
+* [Užbaigiant Žaidimą](#completing-the-game) išmokys jus **dažniausiai naudojamų technikų** React programavime.
+* [Pridėdant Laiko Keliones](#adding-time-travel) suteiks jum **gilesni supratimą** apie unikalias React stiprybes.
 
-You don't have to complete all of the sections at once to get the value out of this tutorial. Try to get as far as you can -- even if it's one or two sections.
+Jum nebūtina atlikti visus skyrius vienu prisėdimu, kad gautumėte vertės iš šios pamokos. Vietoj to, pamėginkite padaryti kuo daugiau - net jeigu tai vienas ar du skyriai.
 
-### What Are We Building? {#what-are-we-building}
+### Ką Mes Kursime? {#what-are-we-building}
 
 In this tutorial, we'll show how to build an interactive tic-tac-toe game with React.
 
@@ -41,13 +41,13 @@ We recommend that you check out the tic-tac-toe game before continuing with the 
 
 You can close the tic-tac-toe game once you're familiar with it. We'll be starting from a simpler template in this tutorial. Our next step is to set you up so that you can start building the game.
 
-### Prerequisites {#prerequisites}
+### Prielaidos {#prerequisites}
 
 We'll assume that you have some familiarity with HTML and JavaScript, but you should be able to follow along even if you're coming from a different programming language. We'll also assume that you're familiar with programming concepts like functions, objects, arrays, and to a lesser extent, classes.
 
 If you need to review JavaScript, we recommend reading [this guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript). Note that we're also using some features from ES6 -- a recent version of JavaScript. In this tutorial, we're using [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), and [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) statements. You can use the [Babel REPL](babel://es5-syntax-example) to check what ES6 code compiles to.
 
-## Setup for the Tutorial {#setup-for-the-tutorial}
+## Pasiruošimas Pamokai {#setup-for-the-tutorial}
 
 There are two ways to complete this tutorial: you can either write the code in your browser, or you can set up a local development environment on your computer.
 
@@ -120,7 +120,7 @@ We recommend following [these instructions](https://babeljs.io/docs/editors/) to
 
 If you get stuck, check out the [community support resources](/community/support.html). In particular, [Reactiflux Chat](https://discord.gg/reactiflux) is a great way to get help quickly. If you don't receive an answer, or if you remain stuck, please file an issue, and we'll help you out.
 
-## Overview {#overview}
+## Apžvalga {#overview}
 
 Now that you're set up, let's get an overview of React!
 
@@ -345,7 +345,7 @@ After installing React DevTools, you can right-click on any element on the page,
 3. Click "Change View" and then choose "Debug mode".
 4. In the new tab that opens, the devtools should now have a React tab.
 
-## Completing the Game {#completing-the-game}
+## Užbaigiant Žaidimą {#completing-the-game}
 
 We now have the basic building blocks for our tic-tac-toe game. To have a complete game, we now need to alternate placing "X"s and "O"s on the board, and we need a way to determine a winner.
 
@@ -755,7 +755,7 @@ We can now change the Board's `handleClick` function to return early by ignoring
 
 Congratulations! You now have a working tic-tac-toe game. And you've just learned the basics of React too. So *you're* probably the real winner here.
 
-## Adding Time Travel {#adding-time-travel}
+## Pridėdant Laiko Keliones {#adding-time-travel}
 
 As a final exercise, let's make it possible to "go back in time" to the previous moves in the game.
 

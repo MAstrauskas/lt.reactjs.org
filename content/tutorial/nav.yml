@@ -1,20 +1,20 @@
-- title: Tutorial
+- title: Pamoka
   items:
     - id: before-we-start-the-tutorial
-      title: Before We Start the Tutorial
+      title: Prieš Pradedant Pamoką
       href: /tutorial/tutorial.html#before-we-start-the-tutorial
       forceInternal: true
       subitems:
         - id: what-are-we-building
-          title: What Are We Building?
+          title: Ką Mes Kursime?
           href: /tutorial/tutorial.html#what-are-we-building
           forceInternal: true
         - id: prerequisites
-          title: Prerequisites
+          title: Prielaidos
           href: /tutorial/tutorial.html#prerequisites
           forceInternal: true
     - id: setup-for-the-tutorial
-      title: Setup for the Tutorial
+      title: Pasiruošimas Pamokai
       href: /tutorial/tutorial.html#setup-for-the-tutorial
       forceInternal: true
       subitems:
@@ -31,7 +31,7 @@
           href: /tutorial/tutorial.html#help-im-stuck
           forceInternal: true
     - id: overview
-      title: Overview
+      title: Apžvalga
       href: /tutorial/tutorial.html#overview
       forceInternal: true
       subitems:
@@ -56,7 +56,7 @@
           href: /tutorial/tutorial.html#developer-tools
           forceInternal: true
     - id: completing-the-game
-      title: Completing the Game
+      title: Užbaigiant Žaidimą
       href: /tutorial/tutorial.html#completing-the-game
       forceInternal: true
       subitems:
@@ -81,7 +81,7 @@
           href: /tutorial/tutorial.html#declaring-a-winner
           forceInternal: true
     - id: adding-time-travel
-      title: Adding Time Travel
+      title: Pridėdant Laiko Keliones
       href: /tutorial/tutorial.html#adding-time-travel
       forceInternal: true
       subitems:
