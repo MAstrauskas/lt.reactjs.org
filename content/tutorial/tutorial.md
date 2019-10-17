@@ -33,29 +33,29 @@ Jum nebūtina atlikti visus skyrius vienu prisėdimu, kad gautumėte vertės iš
 
 ### Ką Mes Kursime? {#what-are-we-building}
 
-In this tutorial, we'll show how to build an interactive tic-tac-toe game with React.
+Šioje pamokoje mes jum parodysime kaip sukurti interaktyvu "Kryžiukai nuliukai" žaidimą naudojant React.
 
-You can see what we'll be building here: **[Final Result](https://codepen.io/gaearon/pen/gWWZgR?editors=0010)**. If the code doesn't make sense to you, or if you are unfamiliar with the code's syntax, don't worry! The goal of this tutorial is to help you understand React and its syntax.
+Čia galite pažiurėti ką mes kursime: **[Galutinis Rezultatas](https://codepen.io/gaearon/pen/gWWZgR?editors=0010)**. Jei jum atrodo, kad šis kodas neturi prasmės arba nežinoti jo sintaksės, nesijaudinkite! Šios pamokos tikslas - padėti jum suprasti React ir jo sintakse.
 
-We recommend that you check out the tic-tac-toe game before continuing with the tutorial. One of the features that you'll notice is that there is a numbered list to the right of the game's board. This list gives you a history of all of the moves that have occurred in the game, and it is updated as the game progresses.
+Prieš pradedant pamoką, mes jum rekomenduojame pažiūrėti į "Kryžiukai nuliukai" žaidimą. Viena iš ypatybių, kurią pastebėsite yra sunumeruotas sąrašas dešinėje žaidimo lentos pusėje. Šis sąrašas suteikia jum visų ejimų, kurie nutiko žaidime, istoriją ir yra atnaujinamas žaidimo eigoje.
 
-You can close the tic-tac-toe game once you're familiar with it. We'll be starting from a simpler template in this tutorial. Our next step is to set you up so that you can start building the game.
+Jei su žaidimu susipažinote, galite jį uždaryti. Šioje pamokoje mes pradėsime nuo paprastesnio šablono. Mūsų kitas žingsnis yra paruošti jus, kad galėtumete pradėti kurti šį žaidimą.
 
 ### Prielaidos {#prerequisites}
 
-We'll assume that you have some familiarity with HTML and JavaScript, but you should be able to follow along even if you're coming from a different programming language. We'll also assume that you're familiar with programming concepts like functions, objects, arrays, and to a lesser extent, classes.
+Mes darome prielaida, kad jūs turite šiokios tokios patirties su HTML ir JavaScript. Jei turite patirties su kita programine kalba, sekti kartu šią pamoką neturėtu būti sudėtinga. Mes taip pat manome, kad jūs esate susipažinęs(-us) su tokiomis programavimo koncepcijomis kaip funkcijos, objektai, masyvai ir klasės.
 
-If you need to review JavaScript, we recommend reading [this guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript). Note that we're also using some features from ES6 -- a recent version of JavaScript. In this tutorial, we're using [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), and [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) statements. You can use the [Babel REPL](babel://es5-syntax-example) to check what ES6 code compiles to.
+Jei norite peržiūrėti JavaScript, rekomenduojame perskaityti [šį gidą](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript).  Verta paminėti, kad mes taip pat naudojame keleta ES6 ypatybių -- naujausią JavaScript versiją. Šioje pamokoje mes naudojame [rodyklių funkcijas](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [klases](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), ir [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) formuluotes. Jus taip pat galite naudoti [Babel REPL](babel://es5-syntax-example) norint patikrinti į ką ES6 kodas yra sudaromas.
 
 ## Pasiruošimas Pamokai {#setup-for-the-tutorial}
 
-There are two ways to complete this tutorial: you can either write the code in your browser, or you can set up a local development environment on your computer.
+Iš viso yra du būdai kaip galima atlikti šią pamoką: jūs galitė rašyti kodą naršyklėje arba susikonfiguruoti vietine programavimo aplinką savo kompiuteryje.
 
-### Setup Option 1: Write Code in the Browser {#setup-option-1-write-code-in-the-browser}
+### Pirmas Pasiruošimo Būdas: Rašyti kodą naršyklėje {#setup-option-1-write-code-in-the-browser}
 
-This is the quickest way to get started!
+Tai yra greičiausias būdas norint pradėti pamoką.
 
-First, open this **[Starter Code](https://codepen.io/gaearon/pen/oWWQNa?editors=0010)** in a new tab. The new tab should display an empty tic-tac-toe game board and React code. We will be editing the React code in this tutorial.
+Pirmiausia, atsidarykite šį **[Pradinį kodą](https://codepen.io/gaearon/pen/oWWQNa?editors=0010)** naujame naršyklės lange. Naujas langas turėtu rodyti tuščią "Kryžiukai nuliukai" žaidimo lentą ir React kodą. Šioje pamokoje mes redaguosime React kodą.
 
 You can now skip the second setup option, and go to the [Overview](#overview) section to get an overview of React.
 
@@ -197,7 +197,6 @@ class Board extends React.Component {
   renderSquare(i) {
     return <Square value={i} />;
   }
-}
 ```
 
 Change Square's `render` method to show that value by replacing `{/* TODO */}` with `{this.props.value}`:
